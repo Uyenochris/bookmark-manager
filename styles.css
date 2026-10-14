@@ -1,0 +1,84 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f3f5f9;
+  color: #222;
+  margin: 0;
+}
+
+.container {
+  width: 85%;
+  max-width: 750px;
+  margin: 30px auto;
+}
+
+h1 { color: #245aa2; }
+h2 { margin-top: 25px; }
+
+nav {
+  background: #e3e9f3;
+  padding: 10px;
+  margin-top: 25px;
+  border-radius: 5px;
+}
+
+nav a {
+  display: inline-block;
+  text-decoration: none;
+  color: #245aa2;
+  padding: 9px 12px;
+  margin-right: 5px;
+}
+
+nav a.on {
+  background: #245aa2;
+  color: white;
+  border-radius: 4px;
+}
+
+form, .bookmark {
+  background: white;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 12px;
+}
+
+label { display: block; margin: 12px 0 5px; }
+input, select {
+  padding: 9px;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #aaa;
+  border-radius: 3px;
+}
+
+button {
+  background: #245aa2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 12px;
+  margin-top: 12px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.bookmark h3 { margin: 0 0 6px; }
+.bookmark p { margin: 5px 0; }
+.bookmark a { overflow-wrap: anywhere; }
+.bookmark button { background: #777; }
+.bookmark .delete { background: #b34b4b; }
+
+.empty {
+  background: white;
+  border: 1px dashed #aabbd2;
+  padding: 30px;
+  text-align: center;
+  color: #666;
+  border-radius: 5px;
+}
+
+@media (max-width: 500px) {
+  .container { width: 94%; }
+  nav a { margin-right: 0; padding: 8px; }
+}

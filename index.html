@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Bookmark Manager</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>My Bookmark Manager</h1>
+    <p>This is where I keep websites that I want to save.</p>
+
+    <nav>
+      <a href="#all" id="all-link">All Bookmarks</a>
+      <a href="#add" id="add-link">Add Bookmark</a>
+    </nav>
+
+    <div id="all-page">
+      <h2>My Bookmarks</h2>
+      <p id="total">Total: 0</p>
+      <div id="list"></div>
+    </div>
+
+    <div id="add-page" style="display: none;">
+      <h2>Add Bookmark</h2>
+      <form id="form">
+        <label for="title">Title:</label>
+        <input id="title" type="text" placeholder="Website name" required>
+
+        <label for="url">URL:</label>
+        <input id="url" type="text" placeholder="https://example.com" required>
+
+        <label for="category">Category:</label>
+        <select id="category">
+          <option>School</option>
+          <option>Tools</option>
+          <option>Fun</option>
+          <option>Other</option>
+        </select>
+
+        <button type="submit">Add it</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
